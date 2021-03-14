@@ -456,6 +456,7 @@
   .cv .content aside .aside-profile .profile .img-profile {
     margin-right: 3px;
   }
+  #pet #link { font-size: 11px; }
 }
 @media only screen and (max-width: 789px) and (min-width: 486px) {
   .cv .content aside .aside-profile .profile {
