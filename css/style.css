@@ -256,7 +256,7 @@
 }
 .cv .content section article .edu {
   display: flex;
-  line-height: 1.0;
+  line-height: 1;
 }
 .cv .content section article .edu .time-content {
   position: relative;
@@ -336,6 +336,10 @@
   font-size: 17px;
   margin-bottom: 5px;
 }
+.cv .content section article .experiences .item-ex .content-ex {
+  padding: 24px 0 24px 0;
+  border-bottom: 1px solid #eee;
+}
 .cv .content section article .experiences .item-ex .content-ex h1 {
   font-size: 18px;
   text-transform: uppercase;
@@ -358,14 +362,6 @@
   font-size: 16px;
   letter-spacing: 0px;
 }
-.cv .content section article .experiences .item-ex .content-ex ul li #boldblue {
-  color: #1c3a3a !important;
-  font-weight: bold;
-}
-.cv .content section article .experiences .item-ex .content-ex ul #pet span{
-  color:#38bdbd;
-  font-weight: normal;
-}
 .cv .content section article .experiences .item-ex .time-ex {
   background: #1c3a3a;
   color: white;
@@ -375,11 +371,7 @@
   padding: 2px 13px;
   font-size: 13px;
 }
-.cv .content section article .experiences .item-ex .content-ex:nth-child(1) {
-  padding: 0px 0 24px 0;
-  border-bottom: 1px solid #eee;
-}
-.cv .content section article .experiences .item-ex .content-ex:nth-child(2) {
+.cv .content section article .experiences .item-ex .content-ex:last-child {
   padding: 24px 0 0px 0;
 }
 .cv .content section article .content-ar {
@@ -391,6 +383,7 @@
   position: relative;
 }
 .cv .content section article .content-ar .about {
+  margin: 0 26px;
   list-style: circle;
 }
 .cv .content section article .content-ar .about li {
@@ -456,7 +449,9 @@
   .cv .content aside .aside-profile .profile .img-profile {
     margin-right: 3px;
   }
-  #pet #link { font-size: 11px; }
+  #pet #link {
+    font-size: 11px;
+  }
 }
 @media only screen and (max-width: 789px) and (min-width: 486px) {
   .cv .content aside .aside-profile .profile {
